@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Memory Gallery</h1>
+
+        <!-- User Authentication -->
+        <div id="auth-container">
+            <input type="text" id="username" placeholder="Enter Username">
+            <button onclick="loginUser()">Login</button>
+        </div>
+
+        <!-- Image Upload -->
+        <div id="upload-container" style="display:none;">
+            <input type="file" id="imageUpload" accept="image/*">
+            <button onclick="uploadImage()">Upload</button>
+        </div>
+
+        <!-- Mosaic Gallery -->
+        <div id="gallery" class="mosaic-grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
